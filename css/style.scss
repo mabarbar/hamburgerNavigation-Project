@@ -1,6 +1,6 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -8,6 +8,7 @@ $dark: #171717;
 $light: #ffefbf;
 
 body {
+  // padding: 20px;
   font-size: 1.5rem;
   font-family: "Quicksand", sans-serif;
 }
@@ -115,4 +116,21 @@ main {
 
 .hamburger--active .hamburger__inner:after {
   transform: translateY(-10px) rotate(-45deg);
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navButtons {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 20px;
+  }
 }
